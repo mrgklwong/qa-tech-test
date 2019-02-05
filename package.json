@@ -16,14 +16,22 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "deps": "curl -L https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-macos.tar.gz | tar xz",
     "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint src/* --fix"
+    "lint": "./node_modules/.bin/eslint src/* --fix",
+    "gecko": "nohup geckodriver --port 4444 &",
+    "e2e": "node src/test/e2e/test_exercise_1.js"
   },
   "devDependencies": {
+    "webdriverio": "5.4.14",
+    "@wdio/cli": "5.4.14",
+    "@wdio/local-runner": "5.4.14",
+    "@wdio/sync": "5.4.14",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0"
+
   }
 }
