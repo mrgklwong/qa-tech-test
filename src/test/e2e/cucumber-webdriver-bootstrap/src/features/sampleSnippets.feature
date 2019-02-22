@@ -26,4 +26,4 @@ Feature: Tech Test for ECS
         And   I set "Gary" to the inputfield "input[data-test-id='submit-4']"
 #        And   I click on the button "#challenge button[tabindex='0']"
 #        Then  I expect that a alertbox contains the text "Congratulations you have succeeded. Please submit your challenge"
-#
+
